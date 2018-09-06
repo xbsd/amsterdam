@@ -1,5 +1,7 @@
 # Amsterdam Workshop
 
+# https://github.com/xbsd/amsterdam
+
 setwd("/cloud/project")
 
 if(!'data.table' %in% rownames(installed.packages())) install.packages('data.table')
@@ -1090,6 +1092,4 @@ merged[CHEMNAME %like% "*Glucose"]
 
 merged <- merge(merged, prac, by="PRACTICE", all.x=TRUE)
 merged
-
-
 
